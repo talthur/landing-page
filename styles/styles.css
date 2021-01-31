@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Lilita+One&family=Potta+One&display=swap');
+/* font-family: 'Potta One', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    font-size: 100%;
+    font-family: 'Lato', sans-serif;
+}
+
+header{
+    background-color: #484ba0;
+    display: f;
+    
+}
+
+#logo__header{
+    text-align: center;
+    display: block;
+    color: white;
+    font-size: 2em;
+    padding-top: 0.8em;
+}
+
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em 1.2em 1.2em 1em;
+}
+
+.menu li{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.7em;
+    letter-spacing: .1rem;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu li a:hover{
+    color: #ff73b3;
+}
+
+
+.home{
+    background-color: #484ba0;
+}
+
+h1{
+    font-family: 'Lilita One', cursive;
+    text-transform: uppercase;
+    color: white;
+    font-size: 3em;
+    padding: 0.6em;
+    letter-spacing: .1rem;
+    line-height: 1.2em;
+
+}
+
+button{
+    
+    border: none;
+    text-decoration: none;
+    background-color: #ff73b3;
+    border-radius: 100px;
+    margin: 0.5em 1em 1.5em 2em;
+    box-shadow: 3px 3px 10px rgba(255, 115, 179, 0.2);
+    text-align: center;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+button span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+button span{
+  content: '\00bb';
+  /* position: absolute;
+  opacity: 100;
+  top: 0;
+  right: -20px;
+  transition: 0.5s; */
+}
+
+button a{
+    text-decoration: inherit;
+    color: white;
+    display: block;
+    font-size: 1.3em;
+    padding: 0.7em;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    
+}
+
+h2{
+    font-family: 'Lilita One', cursive;
+    text-transform: uppercase;
+    color: #424c5c;
+    font-size: 4em;
+    padding-left: 0.5em;
+    letter-spacing: .1rem;
+    line-height: 1.0em;
+
+}
+
+.traço{
+    width: 5em;
+    height: 0.4em;
+    margin-left: 2em;
+    background-color: #ff73b3;
+}
+
+h4{
+    font-weight: bolder;
+    font-size: 1.2em;
+    color:#424c5c;
+}
+
+.container__services{
+    padding: 2em;
+}
+
+
+.service__icons{
+    justify-self: start;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+}
+
+.micro__services{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding-bottom: 1em;
+}
+
+.container__text--icon{
+    grid-column-start: 2;
+    grid-column-end: span 3;
+}
+
+.container__text--icon p{
+    padding-top: 0.8em;
+    line-height: 1.3em;
+}
