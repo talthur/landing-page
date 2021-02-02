@@ -26,24 +26,43 @@ header{
     padding-top: 0.8em;
 }
 
+/* #hamburguer{
+    text-align: center;
+    display: block;
+    color: white;
+    font-size: 2em;
+    padding-top: 0.8em;
+    padding-bottom: 0.3em;
+    cursor: pointer;
+}
+
+#hamburguer--click{
+    text-decoration: none;
+} */
+
 
 .menu{
-    display: flex;
-    justify-content: space-between;
-    padding: 1.5em 1.2em 1.2em 1em;
+    text-align: center;
+    display: none;
+    cursor: pointer;
+    
 }
 
 .menu li{
+    width: 100%;
+    display: block;
     color: white;
     text-transform: uppercase;
     font-weight: 500;
     font-size: 0.7em;
     letter-spacing: .1rem;
+    line-height: 1.7em;
 }
 
 .menu li a{
     text-decoration: none;
     color: inherit;
+    display: block;
 }
 
 .menu li a:hover{
@@ -66,7 +85,7 @@ h1{
 
 }
 
-button{
+.button{
     
     border: none;
     text-decoration: none;
@@ -79,23 +98,13 @@ button{
     cursor: pointer;
 }
 
-button span{
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
+.button:hover{
+
+    background-color: #ff8bbf;
 }
 
-button span{
-  content: '\00bb';
-  /* position: absolute;
-  opacity: 100;
-  top: 0;
-  right: -20px;
-  transition: 0.5s; */
-}
 
-button a{
+.button a{
     text-decoration: inherit;
     color: white;
     display: block;

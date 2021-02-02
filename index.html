@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-<!-- <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/hamburgers.css">
     <title>Landing Page</title>
-</head> -->
+</head>
 
 <body>
     <header>
         <i class="fab fa-shopware" id="logo__header"></i>
+
+        <button class="hamburger hamburger--3dx-r" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>  
+
+        <!-- <a href="javascript:void(0);" id="hamburguer--click">
+        <i class="fas fa-bars" id="hamburguer"></i></a> -->
         <nav class="container__menu">
             <ul class="menu">
                 <li><a href="#">Home</a></li>
@@ -27,7 +37,7 @@
             <img src="" alt="">
             <div>
                 <h1>We bring emotion to your product</h1>
-                <button><a href="#"><span>Contact Us </span></a></button>
+                <button class="button"><a href="#">Contact Us</a></button>
             </div>
 
         </section>
@@ -71,7 +81,7 @@
 
             <figure class="portfolio_photos">
                 <img src="" alt="" id="photo">
-                <nav>
+                <nav class="images__carousel">
                     <a href="#" data-id="0" class="active">&bull;</a>
                     <a href="#" data-id="1">&bull;</a>
                     <a href="#" data-id="2">&bull;</a>
@@ -101,7 +111,7 @@
                 <li class="social__tw"><a href="#">Twitter</a></li>
                 <li class="social__yt"><a href="#">Youtube</a></li>
             </ul>
-            <button>Contact Us</button>
+            <button class="button">Contact Us</button>
         </footer>
 
 
@@ -110,5 +120,5 @@
 
 </body>
 <script src="https://kit.fontawesome.com/838e4cf686.js" crossorigin="anonymous"></script>
-
+<script src="/scripts/app.js"></script>
 </html>
