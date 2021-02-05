@@ -166,3 +166,23 @@ h4{
     padding-top: 0.8em;
     line-height: 1.3em;
 }
+
+.portfolio {
+    background-color: rgb(236, 236, 236);
+    padding: 1em;
+}
+
+#photo{
+    width: 100%;
+    box-shadow: 3px 3px 10px rgba(255, 115, 179, 0.2);
+}
+
+.nav__bullets{
+    text-align: center;
+}
+
+.nav__bullets a{
+    text-decoration: none;
+    color:  #ff73b3;
+    font-size: 1.5em;
+}
