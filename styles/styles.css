@@ -6,6 +6,15 @@
     box-sizing: border-box;
 }
 
+.illustration__one{
+    display: none;
+}
+
+.main__container{
+    max-width: 1280px;
+    margin: auto;
+}
+
 body{
     width: 100%;
     font-size: 100%;
@@ -14,7 +23,6 @@ body{
 
 header{
     background-color: #484ba0;
-    display: f;
     
 }
 
@@ -25,21 +33,6 @@ header{
     font-size: 2em;
     padding-top: 0.8em;
 }
-
-/* #hamburguer{
-    text-align: center;
-    display: block;
-    color: white;
-    font-size: 2em;
-    padding-top: 0.8em;
-    padding-bottom: 0.3em;
-    cursor: pointer;
-}
-
-#hamburguer--click{
-    text-decoration: none;
-} */
-
 
 .menu{
     text-align: center;
@@ -123,6 +116,7 @@ h2{
     padding-left: 0.5em;
     letter-spacing: .1rem;
     line-height: 1.0em;
+    padding-top: 0.5em;
 
 }
 
@@ -131,6 +125,8 @@ h2{
     height: 0.4em;
     margin-left: 2em;
     background-color: #ff73b3;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 h4{
@@ -178,6 +174,7 @@ h4{
 }
 
 .nav__bullets{
+    padding-top: 1em;
     text-align: center;
 }
 
@@ -185,4 +182,189 @@ h4{
     text-decoration: none;
     color:  #ff73b3;
     font-size: 1.5em;
+    
+}
+
+h3{
+    font-weight: bolder;
+    font-size: 1.2em;
+    color:#424c5c;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 1em;
+}
+
+.central{
+    text-align: center;
+    margin: 5% 50% 5% 50%;
+    transform: translate(-50%, -50%);
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+footer{
+    background-color: #484ba0;
+}
+
+footer p:first-child {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 1em;
+    font-weight: 800;
+    letter-spacing: .1rem;
+}
+
+.subtitle {
+    color: rgb(226, 226, 226);
+    text-align: center;
+    font-size: 0.8em;
+    letter-spacing: .1rem;
+    padding-top: 0.5em;
+
+}
+
+.social{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.social a{
+    display: block;
+    width: 36px;
+    height: 36px;
+    background-image: url(/icons/social-media/social-media-icons.png);
+    text-indent: -99999999px;
+}
+
+.social a:hover{
+    background-image: url(/icons/social-media/social-media-icons-02.png);
+}
+
+.social__fb a{
+    background-position: -4px -4px;
+}
+
+.social__tw a{
+    background-position: 199px -4px;
+}
+
+.social__inst a{
+    background-position: 296px -4px;
+}
+
+@media screen and (min-width: 768px){
+
+    header{
+        display:flex;
+        justify-content: space-between;
+    }
+
+    .container__menu{
+        margin-right: 2em;
+        margin-top: 2em;
+    
+    }
+
+    #logo__header{
+        margin-left: 1em;
+    }
+
+    .menu{
+        display:flex;
+        justify-content: space-between;
+        
+    }
+
+    .menu li a{
+        margin: 0.5em;
+    }
+
+    #hamburguer__delete{
+        display: none;
+    }
+
+    .illustration__one{
+        display: block;
+    }
+
+    .home{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        min-height: 370px;
+    }
+
+    .services{
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        min-height: 370px;
+ 
+    }
+    
+    .wedo__container{
+        margin-top: 2em;
+    }
+
+    .container__services{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding; 0px;
+
+    }
+
+    h3{
+        font-size: 1.5em;
+    }
+
+    figure{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    figure img{
+        width: 50%;
+    }
+
+    footer{
+        padding: 2em;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .nav__bullets{
+        margin: auto;
+    }
+
+    .subtitle {
+        padding-top: 0em;
+        align-self: center;
+    
+    }
+    
+    footer p:first-child {
+       
+        padding-top: 0em;
+        align-self: center;
+    }
+
+    .social{
+        padding: 0em;
+        
+    }
+
+    .social li{
+        margin-left: 1em;
+    }
+    
+
+
+
+
 }
