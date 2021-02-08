@@ -212,9 +212,9 @@ h4{
 .arrow{
     display: block;
     align-self: center;
-    padding-bottom: 2em;
-    width: 8%;
-    height: 8%;
+    padding-bottom: 3em;
+    width: 7%;
+    height: 7%;
     flex-grow: 4;
     cursor: pointer;
 }
@@ -233,6 +233,11 @@ h3{
     text-align: center;
     margin: 5% 50% 5% 50%;
     transform: translate(-50%, -50%);
+}
+
+.daily__routine{
+    display: flex;
+    flex-direction: column;
 }
 
 img{
@@ -316,6 +321,12 @@ footer p {
 
 @media screen and (min-width: 768px){
 
+
+    .daily__routine{
+        display: flex;
+        flex-direction: row;
+    }
+
     header{
         display:flex;
         justify-content: space-between;
@@ -366,6 +377,14 @@ footer p {
         min-height: 370px;
  
     }
+
+    .arrow{
+    
+        width: 5%;
+        height: 5%;
+       
+    }
+    
     
     .wedo__container{
         margin-top: 2em;
@@ -485,6 +504,13 @@ footer p {
         
         h3{
             margin-top: 1em;
+        }
+
+        .arrow{
+    
+            width: 0.5%;
+            height: 0.5%;
+           
         }
     }
     
