@@ -198,6 +198,28 @@ h4{
     color:  #ffa7cf;
 }
 
+
+
+.container__arrows{
+    display: flex;
+
+}
+
+.portfolio__photos{
+    flex-grow: 4;
+}
+
+.arrow{
+    display: block;
+    align-self: center;
+    padding-bottom: 2em;
+    width: 8%;
+    height: 8%;
+    flex-grow: 4;
+    cursor: pointer;
+}
+
+
 h3{
     font-weight: bolder;
     font-size: 1.2em;
