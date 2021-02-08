@@ -43,7 +43,7 @@ bullets.addEventListener("click", (e) => {
     
 });
 
-function activeBullet(e) {
+function activeBullet(e) {git
     console.log(e);
     document.querySelector("#active").id = "";
     e.target.id = "active";
