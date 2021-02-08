@@ -251,12 +251,12 @@ footer p {
     display: block;
     width: 36px;
     height: 36px;
-    background-image: url(/icons/social-media/social-media-icons.png);
+    background-image: url(./icons/social-media/social-media-icons.png);
     text-indent: -99999999px;
 }
 
 .social a:hover{
-    background-image: url(/icons/social-media/social-media-icons-02.png);
+    background-image: url(./icons/social-media/social-media-icons-02.png);
 }
 
 .social__fb a{
