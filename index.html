@@ -26,16 +26,15 @@
         <i class="fas fa-bars" id="hamburguer"></i></a> -->
             <nav class="container__menu">
                 <ul class="menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#routine">Contact</a></li>
                 </ul>
             </nav>
         </header>
 
         <main>
-            <section class="home">
+            <section class="home" id="home">
                 <div class="illustration__one">
                     <img src="/images/illustration/ilu1.png" alt="">
                 </div>
@@ -46,7 +45,7 @@
 
             </section>
 
-            <section class="services">
+            <section class="services" id="services">
                 <div class="wedo__container">
                     <h2>What we do</h2>
                     <div class="traço"></div>
@@ -82,7 +81,7 @@
             </section>
 
 
-            <section class="portfolio">
+            <section class="portfolio" id="portfolio">
 
                 <span class="gray-stripe"></span>
                 <div>
@@ -92,9 +91,9 @@
                 </div>
 
                 <figure class="portfolio__photos">
-                    <img src="images/1.png" alt="" id="photo">
+                    <img src="images/1.jpg" alt="" id="photo">
                     <nav class="nav__bullets">
-                        <a href="#" data-id="0" class="active">&bull;</a>
+                        <a href="#" data-id="0" id="active">&bull;</a>
                         <a href="#" data-id="1">&bull;</a>
                         <a href="#" data-id="2">&bull;</a>
                     </nav>
@@ -102,7 +101,7 @@
             </section>
 
 
-            <section class="routine">
+            <section class="routine" id="routine">
                 <h3>Our Daily Routine</h3>
                 <div class="traço central"></div>
                 <figure>
@@ -115,6 +114,9 @@
 
             <span class="footer-stripe"></span>
             <footer>
+                <a href="#home" id="home--button">Home</a>
+                <div class="footer__container">
+    
                 <p>PaperPillar</p>
                 <p class="subtitle">Happy Design Studio</p>
                 <ul class="social">
@@ -122,6 +124,7 @@
                     <li class="social__tw"><a href="#">Twitter</a></li>
                     <li class="social__inst"><a href="#">Instagram</a></li>
                 </ul>
+            </div>
             </footer>
 
 
