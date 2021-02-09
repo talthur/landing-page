@@ -37,30 +37,30 @@ hamburguerClick.addEventListener("click", () => {
 
 });
 
-bullets.addEventListener("click", (e) => {
+// bullets.addEventListener("click", (e) => {
 
-    if (e.target.dataset.id == "0"){
-        e.preventDefault()
-        activeBullet(e)
-        photo.src = `images/${listPhotos[0]}`;
+//     if (e.target.dataset.id == "0"){
+//         e.preventDefault()
+//         activeBullet(e)
+//         photo.src = `images/${listPhotos[0]}`;
         
-    }
+//     }
 
-    if (e.target.dataset.id == "1"){
-        e.preventDefault()
-        activeBullet(e)
-        photo.src = `images/${listPhotos[1]}`;
+//     if (e.target.dataset.id == "1"){
+//         e.preventDefault()
+//         activeBullet(e)
+//         photo.src = `images/${listPhotos[1]}`;
         
-    }
+//     }
 
-    if (e.target.dataset.id == "2"){
-        e.preventDefault()
-        activeBullet(e)
-        photo.src = `images/${listPhotos[2]}`;
+//     if (e.target.dataset.id == "2"){
+//         e.preventDefault()
+//         activeBullet(e)
+//         photo.src = `images/${listPhotos[2]}`;
         
-    }
+//     }
     
-});
+// });
 
 function activeBullet(e) {
     console.log(e);
@@ -76,24 +76,22 @@ containerArrows.addEventListener("click", (e) => {
     if (e.target.id == "arrowr"){
         if (pos == 2){
             pos = 0;
-            activeBullet(pos);
         }
         else{
             pos += 1;
-            activeBullet(pos);
         }
     };
 
     if (e.target.id == "arrowl"){
         if (pos == 0){
             pos = 2;
-            activeBullet(pos);
         }
         else{
             pos -= 1;
-            activeBullet(pos);
         }
+        
     };
+    activeBullet(pos);
     photo.src = `images/${listPhotos[pos].photo}`;
 
 })
